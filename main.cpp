@@ -103,6 +103,7 @@ public:
                     pc = sub_addr;
 
                     cycles--;
+                    break;
                 }
                 default: {
                     std::cout << "Instruction not handled\n";
