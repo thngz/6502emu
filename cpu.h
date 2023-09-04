@@ -52,8 +52,6 @@ public:
     Memory &memory;
     u32 cycles;
 
-    Word pc; // program counter
-    Byte sp; // stack pointer
 
     enum Opcodes {
         // LDA
@@ -133,6 +131,9 @@ public:
 private:
     // registers
     Byte ACC, X, Y;
+
+    Word pc; // program counter
+    Byte sp; // stack pointer
 
     // flags (c++ bit fields)
     Byte C: 1; // carry flag - set if last operation caused an overflow from bit 7 of the result or an underflow from bit 0.

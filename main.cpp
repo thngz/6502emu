@@ -5,6 +5,7 @@ int main() {
     Memory mem;
     CPU cpu(mem, 9);
     cpu.reset();
+
     mem[0xFFFC] = CPU::JSR;
     mem[0xFFFD] = 0x42;
     mem[0xFFFE] = 0x42;
